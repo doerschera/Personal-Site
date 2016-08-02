@@ -1,0 +1,62 @@
+#bodyIndex {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+  background-image: url("Images/Design/Graphic/Print/Remix10_Page_10.png");
+  background-size: 1200px 1650px;
+  background-position: 0px -300px;
+  background-attachment: local;
+}
+
+h1 {
+  font-weight: 100;
+  color: #ffffff;
+  display: flex;
+  margin-top: 400px;
+  font-size: 4em;
+
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  color: #ffffff;
+}
+
+a:visited {
+  color: rgb(236,61,34);
+  text-decoration: line-through;
+}
+
+a:hover {
+  color:rgb(236,61,34);
+  text-decoration: none;
+}
+
+#designBody {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 100;
+}
+
+#name {
+  font-size: 2em;
+  color: black;
+  margin-top: 50px;
+}
+
+#banner {
+  background-image: url("Images/Design/Graphic/Print/RemixBanner.png");
+  height: 55px;
+  margin-top: 50px;
+}
+
+#bannerLink {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.bannerLink {
+  padding: 0px 20px 0px 20px;
+}
