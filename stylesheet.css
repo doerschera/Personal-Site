@@ -1,11 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100');
+
+body {
+  font-family: "Alegreya Sans", "Helvetica Neue", Helvetica, sans-serif;
+  background-image: url('Images/subtle_dots/subtle_dots.png');
+}
+
+h1 {
+  font-size: 100px;
+  position: relative;
+  top: -30px;
+}
+
+h2 {
+  font-size: 75px;
+  margin-top: 200px;
+}
+
+#design {
+  color: #44AFDF;
+  border-bottom: solid 1px #44AFDF;
+}
+
+.design {
+  background-color: #8AC8E4;
+}
+
 img {
   width: 200px;
 }
 
 .relative {
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+
+.relative img {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  height: 100%;
+  width: auto;
+    -webkit-transform: translate(-50%,-25%);
+      -ms-transform: translate(-50%,-25%);
+          transform: translate(-50%,-25%);
 }
 
 h4 {
@@ -13,3 +52,4 @@ h4 {
   left: 0px;
   bottom: 10px;
 }
+
