@@ -5,6 +5,40 @@ body {
   background-image: url('Images/subtle_dots/subtle_dots.png');
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbcbcb;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 h1 {
   font-size: 100px;
   position: relative;
@@ -16,21 +50,18 @@ h2 {
   margin-top: 200px;
 }
 
-h5 {
+h4 {
   font-size: 50px;
   margin-left: -15px;
   margin-right: 20px;
-  /*background-image: url('Images/subtle_dots/subtle_dots.png');*/
-  /*padding: 5px;*/
-  /*margin-left: 20px;*/
+  padding: 10px;
+  margin-left: 10px;
+  border-bottom: solid 5px #ffffff;
 }
 
-h4 {
-  position: absolute;
-  left: auto;
-  bottom: 20px;
-  padding: 5px;
-  background-color: #ffffff;
+h5 {
+  font-size: 20px;
+  padding: 15px;
 }
 
 p {
@@ -45,16 +76,37 @@ img {
   transform: translate(-50%, -50%);
 }
 
+li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.imgLink {
+  width: 20px;
+}
+
+.logo {
+  display: inline;
+  padding-bottom: 15px;
+  opacity: 0.3;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
 .row .gallery {
   margin-top: 0px;
 }
 
 .relative {
-  margin: 20px auto;
+  margin: 10px auto;
   position: relative;
-  height: 100px;
-  width: 100px;
+  height: 125px;
+  width: 125px;
   overflow: hidden;
+  align-content: center;
+  border: solid 1px #f2f2f2;
 }
 
 .margin {
@@ -62,8 +114,11 @@ img {
 }
 
 .menu {
-  padding: 20px;
+  padding: 5px;
   align-content: center;
+  background-color: #ffffff;
+  border: solid 1px #f2f2f2;
+  border-top: none;
 }
 
 #design {
@@ -76,7 +131,9 @@ img {
 .design {
   /*background-color: #f9f9ec;*/
   /*background-color: #f9efec;*/
-  background-color: #eceff9;
+  /*background-color: #eceff9;*/
+  /*background-color: #ffffff;*/
+  /*background-image: url('Images/struckaxiom/struckaxiom.png');*/
 }
 
 #studio {
@@ -86,7 +143,8 @@ img {
 }
 
 .studio {
-  background-color: #f9efec;
+  /*background-color: #f9efec;*/
+  /*background-image: url('Images/tiny_grid/tiny_grid.png');*/
 }
 
 #about {
@@ -96,9 +154,10 @@ img {
 }
 
 .about {
-  background-color: #f9f9ec;
+  /*background-color: #f9f9ec;*/
+  /*background-image: url('Images/struckaxiom/struckaxiom.png');*/
   margin-bottom: 200px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .profile {
@@ -113,8 +172,52 @@ img {
   width: 300px;
 }
 
+.bigImg {
+  margin: 10px auto;
+  /*border: solid 1px red;*/
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: none;
+}
+
+.vert {
+  height: 100%;
+  width: auto;
+}
+
+.hor {
+  width: 100%;
+}
 
 
+.arrow {
+  display: inline-block;
+  width: 5px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: none;
+}
 
+.viewer {
+  /*border: solid 1px red;*/
+  background-color: #ffffff;
+  border: solid 1px #f2f2f2;
+  border-top: none;
+}
 
+.box {
+  /*border: solid 1px red;*/
+  height: 500px;
+  margin-top: 20px;
+  overflow: auto;
+}
 
+.description {
+  padding: 15px;
+}
+
+.heading {
+  border-bottom: solid 1px #cccccc;
+}
