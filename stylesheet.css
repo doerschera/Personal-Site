@@ -157,8 +157,8 @@ p {
 .designGallery {
   margin: 0px auto;
   position: fixed;
-  top: 0%;
-  left: 8%;
+  top: 5%;
+  right: 8%;
 }
 
 .tracking {
@@ -172,9 +172,17 @@ p {
   /*border: solid 1px red;*/
 }
 
-.arrow {
+/*.arrow {
   display: inline-block;
   width: 5px;
+  margin: 0px 5px;
+}*/
+
+.glyphicon {
+  color: #000000;
+}
+
+.glyphicon-menu-left, .glyphicon-menu-right {
   margin: 0px 5px;
 }
 
@@ -183,21 +191,22 @@ p {
   height: 7px;
   width: 7px;
   background-color: #f2f2f2;
-  margin: 0px 7px;
+  margin: 0px 3px;
+  margin-bottom: 3px;
 }
 
 li.active {
   background-color: #000000;
 }
 
-.x {
+/*.x {
   width: 10px;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 10px;
   /*position: absolute;
   bottom: 0%;
   right: -2%;*/
-}
+
 
 /* popup gallery images*/
 
@@ -231,19 +240,31 @@ li.active {
 h5 {
   font-size: 20px;
   padding: 15px;
+  position: relative;
 }
 
-.description {
-  font-size: 12px;
+.description a {
   padding: 15px;
+  color: #cccccc;
+  text-decoration: none;
+  position: absolute;
+  top: 35px;
+}
+
+.glyphicon-menu-down {
+  color: #cccccc;
+  padding-left: 5px;
+}
+
+.text {
+  font-size: 12px;
+  padding-left: 15px;
 }
 
 /* footer */
 
 footer {
   margin-top: 300px;
-  position: fixed;
-  bottom: 0%;
 }
 
 
