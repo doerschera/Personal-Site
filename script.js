@@ -13,8 +13,8 @@ $(document).ready(function () {
 		$('#v1 > div').addClass('project');
 		$('#v1 div:eq(0)').addClass('activeProj');
 
-		$('#designGallery').show();
-		$('#tracking1').show()
+		$('#designGallery, #tracking1').show();
+
 	});
 	$('#menu2').click(function() {
 
@@ -24,8 +24,8 @@ $(document).ready(function () {
 		$('#v2 > div').addClass('project');
 		$('#v2 div:eq(0)').addClass('activeProj');
 
-		$('#studioGallery').show();
-		$('#tracking2').show()
+		$('#studioGallery, #tracking2').show();
+
 	});
 
 	$('.x').click(function () {
