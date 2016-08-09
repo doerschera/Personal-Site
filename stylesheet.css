@@ -165,8 +165,12 @@ p {
   display: none;
   margin: 0px auto;
   position: fixed;
-  top: 5%;
-  right: 8%;
+  top: 8%;
+}
+
+h3 {
+  padding: 0px !important;
+  color: #cccccc;
 }
 
 .tracking {
@@ -189,7 +193,7 @@ p {
   margin: 0px 5px;
 }
 
-.dotD, .dotS {
+.dot {
   border-radius: 100%;
   height: 7px;
   width: 7px;
@@ -198,7 +202,7 @@ p {
   margin-bottom: 3px;
 }
 
-.activeDotD, .activeDotS {
+.activeDot {
   background-color: #000000;
 }
 
@@ -218,16 +222,21 @@ p {
   background-color: #ffffff;
   border: solid 1px #f2f2f2;
   border-top: solid 1px #cccccc;
+  padding-bottom: 20px;
 }
 
 .disable {
-  display: none;
+  display: none !important;
+}
+
+.activeProj {
+  display: inline-block !important;
 }
 
 .box {
   /*border: solid 1px red;*/
   height: 500px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   overflow: auto;
 }
 
@@ -242,6 +251,7 @@ p {
 h5 {
   font-size: 20px;
   padding: 15px;
+  margin-top: 40px;
   position: relative;
 }
 
@@ -250,7 +260,7 @@ h5 {
   color: #cccccc;
   text-decoration: none;
   position: absolute;
-  top: 35px;
+  top: 65px;
 }
 
 .glyphicon-menu-down {
@@ -270,7 +280,13 @@ footer {
   margin-top: 300px;
 }
 
+@media(max-width: 980px) {
 
+  .box {
+    height: 400px;
+  }
+
+}
 
 
 

@@ -6,132 +6,85 @@ $(document).ready(function () {
 	});
 
 	$('#menu1').click(function() {
+
+		$('#list1 li').addClass('dot');
+		$('#list1 li:eq(0)').addClass('activeDot');
+
+		$('#v1 > div').addClass('project');
+		$('#v1 div:eq(0)').addClass('activeProj');
+
 		$('#designGallery').show();
 		$('#tracking1').show()
 	});
 	$('#menu2').click(function() {
+
+		$('#list2 li').addClass('dot');
+		$('#list2 li:eq(0)').addClass('activeDot');
+
+		$('#v2 > div').addClass('project');
+		$('#v2 div:eq(0)').addClass('activeProj');
+
 		$('#studioGallery').show();
 		$('#tracking2').show()
 	});
 
 	$('.x').click(function () {
 		$('#designGallery, #studioGallery').hide()
+
+		$('li').removeClass('dot activeDot');
+		$('.viewer div').removeClass('project activeProj');
 	});
 
-	// $.fn.gallery = function(activeClass, elementClass) {
 
-	// 	var active = $(activeClass);
-	// 	var next = active.next();
+	$('.arrowRight').click(function () {
 
-	// 	if (next.length == 0) {
-	// 		next = $(elementClass);
-	// 	}
-
-	// 	active.fadeOut(0).removeClass(activeClass);
-	// 	next.fadeIn(0).addClass(activeClass);
-	// }
-
-	// $('.arrowRight').on('click', function() {
-	// 	$.fn.gallery('.activeProj', '.project')
-	// });
-
-	$('.arrowRightD').click(function () {
-
-		var actProj = $('.activeProjD');
-		var nextProj = actProj.next('.projectD');
+		var actProj = $('.activeProj');
+		var nextProj = actProj.next('.project');
 
 		if (nextProj.length == 0) {
-			nextProj = $('.projectD').first();
+			nextProj = $('.project').first();
 		}
 
-		actProj.fadeOut(0).removeClass('activeProjD');
-		nextProj.fadeIn(0).addClass('activeProjD');
+		actProj.fadeOut(0).removeClass('activeProj');
+		nextProj.fadeIn(0).addClass('activeProj');
 
-		var actDot = $('.activeDotD');
+		var actDot = $('.activeDot');
 		var nextDot = actDot.next();
 
 		if (nextDot.length == 0) {
-			nextDot = $('.dotD').first();
+			nextDot = $('.dot').first();
 		}
 
-		actDot.removeClass('activeDotD');
-		nextDot.addClass('activeDotD');
+		actDot.removeClass('activeDot');
+		nextDot.addClass('activeDot');
 
 	})
 
 
-	$('.arrowLeftD').click(function() {
+	$('.arrowLeft').click(function() {
 
-		var actProj = $('.activeProjD');
-		var prevProj = actProj.prev('.projectD');
+		var actProj = $('.activeProj');
+		var prevProj = actProj.prev('.project');
 
 		if (prevProj.length == 0) {
-			prevProj = $('.projectD').last();
+			prevProj = $('.project').last();
 		}
 
-		actProj.fadeOut(0).removeClass('activeProjD');
-		prevProj.fadeIn(0).addClass('activeProjD');
+		actProj.fadeOut(0).removeClass('activeProj');
+		prevProj.fadeIn(0).addClass('activeProj');
 
-		var actDot = $('.activeDotD');
+		var actDot = $('.activeDot');
 		var	prevDot = actDot.prev();
 
 		if (prevDot.length == 0) {
-			prevDot = $('.dotD').last();
+			prevDot = $('.dot').last();
 		}
 
-		actDot.removeClass('activeDotD');
-		prevDot.addClass('activeDotD');
+		actDot.removeClass('activeDot');
+		prevDot.addClass('activeDot');
 
 	})
 
-		$('.arrowRightS').click(function () {
-
-		var actProj = $('.activeProjS');
-		var nextProj = actProj.next('.projectS');
-
-		if (nextProj.length == 0) {
-			nextProj = $('.projectS').first();
-		}
-
-		actProj.fadeOut(0).removeClass('activeProjS');
-		nextProj.fadeIn(0).addClass('activeProjS');
-
-		var actDot = $('.activeDotS');
-		var nextDot = actDot.next();
-
-		if (nextDot.length == 0) {
-			nextDot = $('.dotS').first();
-		}
-
-		actDot.removeClass('activeDotS');
-		nextDot.addClass('activeDotS');
-
-	})
-
-
-	$('.arrowLeftS').click(function() {
-
-		var actProj = $('.activeProjS');
-		var prevProj = actProj.prev('.projectS');
-
-		if (prevProj.length == 0) {
-			prevProj = $('.projectS').last();
-		}
-
-		actProj.fadeOut(0).removeClass('activeProjS');
-		prevProj.fadeIn(0).addClass('activeProjS');
-
-		var actDot = $('.activeDotS');
-		var	prevDot = actDot.prev();
-
-		if (prevDot.length == 0) {
-			prevDot = $('.dotS').last();
-		}
-
-		actDot.removeClass('activeDotS');
-		prevDot.addClass('activeDotS');
-
-	})
 
 	$('#design, #studio, #about').click(function() {
 		event.preventDefault();
