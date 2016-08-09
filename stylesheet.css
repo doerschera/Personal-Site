@@ -161,7 +161,7 @@ p {
 
 /* popup gallery heading */
 
-#designGallery {
+.gallery {
   display: none;
   margin: 0px auto;
   position: fixed;
@@ -170,6 +170,7 @@ p {
 }
 
 .tracking {
+  display: none;
   width: 175px;
   padding: 0px;
   margin: 0px;
@@ -177,7 +178,7 @@ p {
   position: absolute;
   bottom: 0%;
   right: 0%;
-  /*border: solid 1px red;*/
+  text-align: right;
 }
 
 .glyphicon {
@@ -188,7 +189,7 @@ p {
   margin: 0px 5px;
 }
 
-.dot {
+.dotD, .dotS {
   border-radius: 100%;
   height: 7px;
   width: 7px;
@@ -197,7 +198,7 @@ p {
   margin-bottom: 3px;
 }
 
-.activeDot {
+.activeDotD, .activeDotS {
   background-color: #000000;
 }
 
