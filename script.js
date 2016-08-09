@@ -13,9 +13,10 @@ $(document).ready(function () {
 		$('#v1 > div').addClass('project');
 		$('#v1 div:eq(0)').addClass('activeProj');
 
-		$('#designGallery, #tracking1').show();
+		$('#designGallery, #tracking1').show()
 
 	});
+	
 	$('#menu2').click(function() {
 
 		$('#list2 li').addClass('dot');
@@ -26,14 +27,14 @@ $(document).ready(function () {
 
 		$('#studioGallery, #tracking2').show();
 
-	});
+	})
 
 	$('.x').click(function () {
 		$('#designGallery, #studioGallery').hide()
 
 		$('li').removeClass('dot activeDot');
 		$('.viewer div').removeClass('project activeProj');
-	});
+	})
 
 
 	$('.arrowRight').click(function () {
