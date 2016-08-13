@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$('h2').fadeIn(2000);
-	$('h1').delay(1500).fadeIn(3000, function() {
+	$('h1').delay(1500).fadeIn(2000, function() {
 		$('#design, #studio, #about').show();
 		$('footer').show()
 	});
