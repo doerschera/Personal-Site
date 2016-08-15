@@ -3,7 +3,7 @@
 $(document).ready(function () {
 	$('h2').fadeIn(2000);
 	$('h1').delay(1500).fadeIn(2000, function() {
-		$('#design, #studio, #about').show();
+		$('#web, #design, #studio, #about').show();
 		$('footer').show()
 	});
 
@@ -17,9 +17,9 @@ $(document).ready(function () {
 		$('#v1 > div').addClass('project');
 		$('#v1 div:eq(0)').addClass('activeProj');
 
-		$('#designGallery, #tracking1').show()
+		$('#designGallery, #tracking1').show();
 
-	});
+	})
 	
 	$('#menu2').click(function() {
 
@@ -33,10 +33,21 @@ $(document).ready(function () {
 
 	})
 
+	$('#menu3').click(function() {
+
+		$('#list3 li').addClass('dot');
+		$('#list3 li:eq(0)').addClass('activeDot');
+
+		$('#v3 > div').addClass('project');
+		$('#v3 div:eq(0)').addClass('activeProj');
+
+		$('#webGallery, #tracking3').show();
+	})
+
 // closing galleries
 
 	$('.x').click(function () {
-		$('#designGallery, #studioGallery').hide()
+		$('.gallery').hide()
 
 		$('li').removeClass('dot activeDot');
 		$('.viewer div').removeClass('project activeProj');
@@ -95,7 +106,7 @@ $(document).ready(function () {
 
 // prevent page jumping whith menu collapse/expansion
 
-	$('#design, #studio, #about').click(function() {
+	$('#web, #design, #studio, #about').click(function() {
 		event.preventDefault();
 	})
 
